@@ -46,11 +46,11 @@ for (let i = 0; i < sizes.length; i++) {
 
 	elSizeInput.type = "radio";
 	elSizeInput.name = "Bread size:";
-	elSizeInput.className = "input-style";
+	elSizeInput.className = "input-style visually-hidden";
 	elSizeInput.value = sizes[i];
 
 	elSizeSpan.textContent = ` ${sizes[i]}sm`;
-	elSizeSpan.className = "rounded-circle px-2 py-4 border border-dark me-4";
+	elSizeSpan.className = "rounded-circle px-3 py-4 border border-dark me-4";
 
 	elSizeInput.addEventListener("change", function () {
 		elOrderSize.textContent = sizes[i];
